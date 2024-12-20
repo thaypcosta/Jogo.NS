@@ -28,7 +28,7 @@ Este é um jogo simples de adivinhação de números, desenvolvido em JavaScript
         while (chute != numeroSecreto) {
             chute = prompt('Escolha um número entre 1 e 10');
             if (numeroSecreto == chute) {
-                alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa(s)!`);
+                alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas}`);
             } else {
                 if (chute > numeroSecreto) {
                     alert(`O número secreto é menor que ${chute}`);
