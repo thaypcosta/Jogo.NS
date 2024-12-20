@@ -7,7 +7,7 @@ Este é um jogo simples de adivinhação de números, desenvolvido em JavaScript
 - O número secreto é pré-definido no código.
 - O jogador precisa adivinhar o número entre **1 e 10**.
 - O programa fornece dicas indicando se o número secreto é maior ou menor que o chute.
-- Quando o jogador acerta, o jogo exibe uma mensagem de vitória.
+- O jogo exibe a quantidade de tentativas realizadas para acertar.
 
 ## 🛠️ Requisitos
 
@@ -23,17 +23,19 @@ Este é um jogo simples de adivinhação de números, desenvolvido em JavaScript
         let numeroSecreto = 5;
         console.log(numeroSecreto);
         let chute;
+        let tentativas = 1;
 
         while (chute != numeroSecreto) {
             chute = prompt('Escolha um número entre 1 e 10');
             if (numeroSecreto == chute) {
-                alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto}`);
+                alert(`Isso aí! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativa(s)!`);
             } else {
                 if (chute > numeroSecreto) {
                     alert(`O número secreto é menor que ${chute}`);
                 } else {
                     alert(`O número secreto é maior que ${chute}`);
                 }
+                tentativas++;
             }
         }
     </script>
@@ -54,6 +56,7 @@ Este é um projeto inicial para quem está aprendendo JavaScript. Ele é ideal p
 
 - Estruturas de repetição (`while`);
 - Condicionais (`if/else`);
+- Contadores (`tentativas`);
 - Interação com o usuário por meio do método `prompt`.
 
 ## 🌟 Melhorias Futuras
@@ -64,4 +67,4 @@ Este é um projeto inicial para quem está aprendendo JavaScript. Ele é ideal p
 
 ---
 
-💻 **Feito com dedicação por tHAYNÁ (https://github.com/thaypcosta).**
+💻 **Feito com dedicação por THAYNÁ (https://github.com/thaypcosta).**
